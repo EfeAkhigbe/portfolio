@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#home {
+  background: url("photos/summersky.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #035579;
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background-color: #00d8fe65;
+  color: #035579;
+}
+
+a {
+  text-decoration: none;
+  color: #035579;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-ul li {
+  list-style-type: none;
+  margin-right: 1rem;
+  color: #035579;
+}
+
+#about {
+  background-color: white;
+}
+
+.about,
+.projects,
+.articles,
+.contact {
+  max-width: 800px;
+  padding-top: 1rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #013044;
+}
+
+h2 {
+  text-align: center;
+  color: #035579;
+  font-size: 2.5rem;
+  margin: 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  color: #035579;
+  line-height: 2rem;
+}
+
+.skills ul,
+.projects ul {
+  margin-left: 1rem;
+}
+
+.skills li,
+.projects li {
+  margin-bottom: 1rem;
+  color: #035579;
+}
+
+.skill-cards,
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-card {
+  width: 20rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+.card {
+  max-width: 20rem;
+  margin-bottom: 5rem;
+  margin-right: 1rem;
+  padding: 1.5rem;
+  box-shadow: rgba(3, 85, 121, 0.4) -5px 5px, rgba(3, 85, 121, 0.3) -10px 10px,
+    rgba(3, 85, 121, 0.2) -15px 15px, rgba(3, 85, 121, 0.1) -20px 20px,
+    rgba(3, 85, 121, 0.05) -25px 25px;
+}
+
+.projects {
+  color: #035579;
+}
+
+.projects p,
+.articles p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.6rem;
+}
+
+.projects a {
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+
+#contact {
+  background-color: #00d8fe65;
+}
+
+.contact {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 2px solid #035579;
+}
+
+button {
+  padding: 0.7rem;
+  background-color: #035579;
+  color: white;
+  border-style: none;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  color: #035579;
+  margin-bottom: 1.5rem;
+}
+
+.icons {
+  margin: 2rem;
+}
+
+.icons i {
+  border: 1px solid #035579;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #00d8fe65;
+  color: #035579;
+  padding: 1.4rem;
+  text-align: center;
+}
