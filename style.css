@@ -13,9 +13,19 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+
+.scroll {
+  color: #c23b46c5;
+  position: absolute;
+  bottom: 1rem;
+}
+
+#home h2 {
+  margin: 0;
 }
 
 h1 {
@@ -35,6 +45,12 @@ nav {
 a {
   text-decoration: none;
   color: #035579;
+}
+
+nav a:focus,
+nav a:hover,
+.projects a:hover {
+  color: #fe8690;
 }
 
 .nav-ul {
@@ -57,7 +73,7 @@ a {
 .contact {
   max-width: 800px;
   padding-top: 1rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: left;
 }
 
@@ -82,37 +98,56 @@ h3 {
   line-height: 2rem;
 }
 
+.me,
+.skills {
+  padding: 0 1rem;
+}
+
 .skills ul,
 .projects ul {
   margin-left: 1rem;
 }
 
-.skills li,
 .projects li {
   margin-bottom: 1rem;
   color: #035579;
 }
 
-.skill-cards,
+.skills ul {
+  display: flex;
+  color: #035579;
+}
+
+.skills li {
+  margin-right: 2rem;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
+  margin-left: 3rem;
 }
 
 .skill-card {
-  width: 20rem;
   margin-bottom: 2rem;
-  margin-right: 1rem;
 }
 
 .card {
+  background-color: white;
   max-width: 20rem;
   margin-bottom: 5rem;
   margin-right: 1rem;
   padding: 1.5rem;
-  box-shadow: rgba(3, 85, 121, 0.4) -5px 5px, rgba(3, 85, 121, 0.3) -10px 10px,
+  box-shadow: rgba(254, 134, 144, 0.4) -5px 5px,
+    rgba(254, 134, 144, 0.3) -10px 10px, rgba(254, 134, 144, 0.2) -15px 15px,
+    rgba(254, 134, 144, 0.1) -20px 20px, rgba(254, 134, 144, 0.05) -25px 25px;
+  /* box-shadow: rgba(3, 85, 121, 0.4) -5px 5px, rgba(3, 85, 121, 0.3) -10px 10px,
     rgba(3, 85, 121, 0.2) -15px 15px, rgba(3, 85, 121, 0.1) -20px 20px,
-    rgba(3, 85, 121, 0.05) -25px 25px;
+    rgba(3, 85, 121, 0.05) -25px 25px; */
+}
+
+#projects {
+  background-color: #00d8fe65;
 }
 
 .projects {
@@ -159,6 +194,7 @@ button {
   color: white;
   border-style: none;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .contact p {
