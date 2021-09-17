@@ -36,10 +36,17 @@ h1 {
 
 nav {
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   padding: 1.5rem 3rem;
   background-color: #00d8fe65;
   color: #035579;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 a {
@@ -73,7 +80,7 @@ nav a:hover,
 .contact {
   max-width: 800px;
   padding-top: 1rem;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -99,8 +106,10 @@ h3 {
 }
 
 .me,
-.skills {
-  padding: 0 1rem;
+.skills,
+.contact {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .skills ul,
