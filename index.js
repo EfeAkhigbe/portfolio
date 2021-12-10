@@ -1,3 +1,16 @@
+
+
+let menu = document.getElementById("menu");
+let closeIcon = document.getElementById("check");
+
+menu.addEventListener("click", handleMenuClick);
+
+function handleMenuClick(event) {
+  if (event.target instanceof HTMLAnchorElement) {
+    closeIcon.checked = false;
+  }
+}
+
 window.onscroll = function () {
   myFunction();
 };

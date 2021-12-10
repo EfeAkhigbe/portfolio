@@ -16,13 +16,18 @@
    <div id="home">
         <h1>Efe Akhigbe</h1>
         <h2>Front-end developer & Technical writer</h2>
-        <div class="scroll animate__animated animate__pulse">
+        <div class="scroll-icon">
             <i class="fad fa-angle-double-down fa-2x"></i>
         </div>
    </div>
    <nav id="navbar">
-        Efe Akhigbe
-        <ul class="nav-ul">
+        <label class="logo">Efe Akhigbe</label>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <ul id="menu" class="nav-ul">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
@@ -49,12 +54,42 @@
         
                 <p>
                     I enjoy learning new technologies and, I share my knowledge by writing beginner-friendly articles on
-                    Hashnode.
+                    <a class="hashnode-link" href="https://efeakhigbe.hashnode.dev/">Hashnode.</a> 
                 </p>
         
                 <p>
                     I love teaching people to code
                 </p>
+            </div>
+
+            <div class="photo-grid">
+                <div class="item-1">
+                    <img class="teach" src="photos\teach\teach1.jpeg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-2">
+                    <img class="teach" src="photos\teach\teach2.jpg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-3">
+                    <img class="teach" src="photos\teach\teach5.jpeg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-4">
+                    <img class="teach" src="photos\teach\teach4.jpeg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-5">
+                    <img class="teach" src="photos\teach\teach3.jpeg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-6">
+                    <img class="teach" src="photos\teach\teach6.jpeg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-7">
+                    <img class="teach" src="photos\teach\teach7.jpg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-1">
+                    <img class="teach" src="photos\teach\teach1.jpeg" alt="A photo of Efe teaching a group of children">
+                </div>
+                <div class="item-2">
+                    <img class="teach" src="photos\teach\teach2.jpg" alt="A photo of Efe teaching a group of children">
+                </div>
             </div>
 
             <div class="skills">
@@ -84,7 +119,7 @@
                         <li>NPM</li>
                         <li>VSCODE</li>
                         <li>FIGMA</li>
-                        <li>CANVA</li>
+                        <li>NETLIFY</li>
                     </ul>
                 </div>
                 
@@ -205,7 +240,7 @@
            <div class="contact">
             <h2 class="sub-heading">CONTACT</h2>
             <p>I am available to work on your projects and bring your ideas to life</p>
-            <form action="">
+            <form name="contact" method="POST" data-netlify="true">
                 <input type="text" name="text" id="text" placeholder="Name" required>
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <textarea name="message" id="messsage" cols="30" rows="10" placeholder="Message" required></textarea>

@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.scroll {
+.scroll-icon {
   color: #c23b46c5;
   position: absolute;
   bottom: 1rem;
@@ -30,17 +30,17 @@
 
 h1 {
   color: #035579;
-  font-size: 60px;
+  font-size: 3.75rem;
   margin-bottom: 1rem;
 }
 
 nav {
   display: flex;
-  overflow: hidden;
   justify-content: space-between;
   padding: 1.5rem 3rem;
   background-color: #00d8fe65;
   color: #035579;
+  backdrop-filter: blur(3px);
 }
 
 .sticky {
@@ -54,10 +54,24 @@ a {
   color: #035579;
 }
 
-nav a:focus,
+i {
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+nav a.active a:focus,
+nav a:active,
 nav a:hover,
 .projects a:hover {
   color: #fe8690;
+}
+
+#btn,
+#cancel {
+  display: none;
 }
 
 .nav-ul {
@@ -70,6 +84,10 @@ nav a:hover,
   color: #035579;
 }
 
+.hashnode-link {
+  text-decoration: underline;
+}
+
 #about {
   background-color: white;
 }
@@ -78,7 +96,7 @@ nav a:hover,
 .projects,
 .articles,
 .contact {
-  max-width: 800px;
+  max-width: 50rem;
   padding-top: 1rem;
   margin: 0 auto;
   text-align: left;
@@ -88,7 +106,7 @@ nav a:hover,
   margin: 1rem 0;
   font-size: 1.5rem;
   line-height: 2.2rem;
-  color: #013044;
+  color: #035579;
 }
 
 h2 {
@@ -103,6 +121,39 @@ h3 {
   margin: 2rem 0;
   color: #035579;
   line-height: 2rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 150px);
+  margin: 0 auto;
+  padding-top: 1rem;
+  /* max-width: 90%; */
+}
+
+.teach {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-4 {
+  grid-row: 2/5;
+}
+
+.item-5 {
+  grid-row: 2/6;
+}
+
+.item-6 {
+  grid-row: 2/4;
+}
+
+.item-7 {
+  grid-row: 5/6;
 }
 
 .me,
@@ -186,7 +237,7 @@ h3 {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
 }
 
@@ -226,4 +277,95 @@ footer {
   color: #035579;
   padding: 1.4rem;
   text-align: center;
+}
+
+@media (max-width: 770px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .about p,
+  .contact p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .skill-card ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects p,
+  .articles p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+  }
+
+  nav {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 740px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form {
+      max-width: 20rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .responsive-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #00d8fe65;
+      backdrop-filter: blur(3px);
+      padding-bottom: 3rem;
+      margin-top: 2.3rem;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      left: -100%;
+      transition: all 2s;
+    }
+
+    .nav-ul li {
+      margin-right: 0;
+      font-weight: bold;
+    }
+
+    #btn {
+      display: inline-block;
+    }
+
+    #check:checked ~ .nav-ul {
+      left: 0;
+    }
+
+    #check:checked ~ label #btn {
+      display: none;
+    }
+
+    #check:checked ~ label #cancel {
+      display: inline-block;
+    }
+  }
 }
